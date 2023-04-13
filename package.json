@@ -1,0 +1,28 @@
+{
+  "name": "simple-form-submit",
+  "author": {
+    "name": "Siyoung byun",
+    "email": "syungb@gmail.com"
+  },
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "app:watch": "shadow-cljs watch app",
+    "app:release": "shadow-cljs release app",
+    "style:watch": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/style.css --watch",
+    "style:release": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/style.css",
+    "dev": "run-p -l *:watch",
+    "release": "run-s *:release"
+  },
+  "dependencies": {
+    "create-react-class": "^15.7.0",
+    "react": "^17.0.2-0",
+    "react-dom": "^17.0.2-0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "highlight.js": "11.5.1",
+    "shadow-cljs": "2.22.10",
+    "tailwindcss": "^3.3.1"
+  }
+}
